@@ -33,6 +33,7 @@ public class RestapiApplication implements CommandLineRunner {
 		testProduct.setCategory("SPECIAL");
 
 		productRepository.save(testProduct);
+		System.out.println("test");
 
 	}
 }

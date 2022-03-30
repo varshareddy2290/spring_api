@@ -53,6 +53,7 @@ public class ProductsService {
     public void deleteProduct(String id) {
         try {
             productRepository.delete(id);
+            System.out.println("test1");
         } catch (Exception e) {
             LOG.error("An error occurred during deleting of product:" + e.getMessage());
         }
